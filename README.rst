@@ -13,6 +13,9 @@ Install
 
   pip install os_adminpass_python_novaclient_ext
 
+or 
+
+  sudo pip install https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext/archive/0.1.0.zip
 
 Usage
 =====
