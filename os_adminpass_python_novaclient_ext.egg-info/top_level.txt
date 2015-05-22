@@ -1,0 +1,1 @@
+os_adminpass_python_novaclient_ext
