@@ -1,5 +1,5 @@
-Metadata-Version: 1.1
-Name: os_adminpass_python_novaclient_ext
+Metadata-Version: 1.0
+Name: os-adminpass-python-novaclient-ext
 Version: 0.1.0
 Summary: Admin Password extension for python-novaclient
 Home-page: UNKNOWN
