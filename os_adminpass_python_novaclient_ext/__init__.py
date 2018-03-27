@@ -18,8 +18,13 @@ admin Password extension
 """
 
 from novaclient import utils
-from novaclient.v1_1 import servers
-from novaclient.v1_1 import shell
+
+try:
+    from novaclient.v2 import servers
+    from novaclient.v2 import shell
+except ImportError:
+    from novaclient.v1_1 import servers
+    from novaclient.v1_1 import shell
 
 API_ADMIN_PASS = "OS-DCF:adminPass"
 
@@ -48,6 +53,10 @@ def add_args():
              " This overrides the value inherited from image.")
 
 
+@utils.arg(
+    'admin-password', 
+    metavar='<admin password>', 
+    help=_('When you setup root(admin) password for OS to primary boot disk.'))
 def bind_args_to_resource_manager(args):
     def add_admin_password(args):
         return dict(admin_password=args.admin_password)

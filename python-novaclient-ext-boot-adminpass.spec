@@ -4,25 +4,25 @@
 %global pkg_name novaclient-ext-os-adminpass
 
 Name:           python-%{pkg_name}
-## Version:        0.5.3
-Version:        0.1.0
+## Version:        0.1.0
+Version:        0.1.1
 ## os_adminpass_python_novaclient_ext-0.1.0.tar.gz
-##Release:        1%%{?dist}
 Release:        2%{?dist}
 Summary:        Mock object 3 framework
 
 Group:          Development/Languages
 License:        ASL 2.0
 URL:            http://code.google.com/p/pymox
+## https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext
 Source0:        http://pypi.python.org/packages/source/m/mox/%{upstream_name}-%{version}.tar.gz
+## https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext/archive/0.1.0.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
 BuildRequires:  python-devel
 
 %description
-Mox is a mock object framework for Python based on the Java mock object
-framework EasyMock.
+python-novaclient-ext-os-adminpass is a novaclient extension for OpenStack.
 
 %prep
 %setup -q -n %{upstream_name}-%{version}
@@ -51,8 +51,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-# [n-gohko@hp-pc-ip150 SPECS]$ ls /home/n-gohko/rpmbuild/BUILD/os_adminpass_python_novaclient_ext-0.1.0
-# PKG-INFO  README.rst  build  debugfiles.list  debuglinks.list  debugsources.list  elfbins.list  os_adminpass_python_novaclient_ext  os_adminpass_python_novaclient_ext.egg-info  setup.cfg  setup.py
+
 
 %doc README.rst PKG-INFO debugfiles.list debuglinks.list debugsources.list elfbins.list setup.cfg
 %{python_sitelib}/%{upstream_name}/*
@@ -61,5 +60,9 @@ rm -rf %{buildroot}
 %{python_sitelib}/%{upstream_name}-%{version}*.egg-info
 
 %changelog
+* Tue Mar 27 2018 Naoto Gohko <naoto-gohko@gmo.jp> - 0.1.1-1
+- support novaclient v2 api
+
 * Mon May 04 2015 Naoto Gohko <naoto-gohko@gmo.jp> - 0.1.0-1
 - Initial package
+

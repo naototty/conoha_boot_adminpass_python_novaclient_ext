@@ -1,12 +1,12 @@
 Metadata-Version: 1.1
 Name: os_adminpass_python_novaclient_ext
-Version: 0.1.0
+Version: 0.1.1
 Summary: Admin Password extension for python-novaclient
-Home-page: UNKNOWN
-Author: ConoHa
+Home-page: https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext
+Author: Naoto Gohko
 Author-email: naoto-gohko@gmo.jp
 License: Apache License, Version 2.0
-Description: UNKNOWN
+Description: client extension tools for ConoHa cloud and z.com cloud
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers

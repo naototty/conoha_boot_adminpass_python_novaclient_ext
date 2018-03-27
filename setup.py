@@ -17,7 +17,7 @@ import setuptools
 
 setuptools.setup(
     name="os_adminpass_python_novaclient_ext",
-    version="0.1.0",
+    version="0.1.1",
     author="ConoHa",
     author_email="naoto-gohko@gmo.jp",
     description="Admin Password extension for python-novaclient",

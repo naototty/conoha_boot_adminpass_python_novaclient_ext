@@ -17,7 +17,7 @@ or
 
 ::
 
-  sudo pip install https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext/archive/0.1.0.zip
+  sudo pip install https://github.com/naototty/conoha_boot_adminpass_python_novaclient_ext/archive/0.1.1.zip
 
 
 Usage
@@ -33,3 +33,11 @@ Note
 
 This is the *client* extension, for admin-password to work, the Nova service must
 also be using the *server-side* extension as well.
+
+
+Version
+=======
+
+* 0.1.1 : v2 novaclient support
+
+* 0.1.0 : v1.1 novaclient only support
